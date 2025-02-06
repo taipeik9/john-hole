@@ -1,5 +1,7 @@
 # Overall Goals with this Repo
 
+TODO: Spellcheck "received"
+
 Things I want users to be able to do on the application:
 - [ ] Search name and see individual stats
 	- [ ] messages sent
@@ -12,3 +14,4 @@ Things I want users to be able to do on the application:
 	- [ ] Messages sent bar graph
 	- [ ] Reactions received ratio
 	- [ ] total stats, total messages sent in the month, total reactions sent in a month
+- [ ] Awards page for users with outstanding scores: "the giggler", "the essayist", "the star", "the holer", "the photographer", "the farmer"
