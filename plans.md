@@ -26,3 +26,4 @@ Things I want users to be able to do on the application:
 - [ ] trim data so only within jan1 - jan31
 - [ ] remove duplicates
 - [ ] convert from notebook to script
+  - [ ] should be able to pass array of html names to script, and month name, along with output file name
