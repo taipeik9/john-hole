@@ -12,8 +12,6 @@
 
 body {
   margin: 0;
-  display: flex;
-  justify-content: center;
   min-width: 100vw;
   min-height: 100vh;
 }

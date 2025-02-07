@@ -3,11 +3,10 @@ import "./App.css";
 import {
   Container,
   ListItemText,
-  List,
-  ListItem,
   Paper,
   Autocomplete,
   TextField,
+  Grid2 as Grid,
 } from "@mui/material";
 
 type Label = {
@@ -39,14 +38,21 @@ function App() {
   });
 
   return (
-    <Container sx={{ p: 2 }}>
+    <Container maxWidth="sm" sx={{ p: 2 }}>
       {data && (
         <Autocomplete
           disablePortal
-          options={Object.keys(data)}
-          sx={{ width: 300 }}
+          options={Object.keys(data).sort((a, b) => {
+            const isANumber = a.startsWith("+");
+            const isBNumber = b.startsWith("+");
+
+            if (!isANumber && isBNumber) return -1; // Names come before numbers
+            if (isANumber && !isBNumber) return 1; // Numbers come after names
+
+            return isANumber ? a.localeCompare(b) : a.localeCompare(b);
+          })}
+          fullWidth
           onChange={(e: any, newVal: any | null) => {
-            console.log(newVal);
             setSelectedPerson(data[newVal]);
           }}
           renderInput={(params) => (
@@ -57,10 +63,11 @@ function App() {
 
       {selectedPerson && (
         <Paper elevation={2}>
-          <List>
+          <Grid container spacing={2}>
             {labels.map((label: Label) => (
-              <ListItem key={label.label}>
+              <Grid key={label.label} size={6}>
                 <ListItemText
+                  sx={{ m: 2 }}
                   primary={
                     label.label !== "ratio"
                       ? selectedPerson[label.label]
@@ -70,9 +77,9 @@ function App() {
                   }
                   secondary={label.displayName}
                 />
-              </ListItem>
+              </Grid>
             ))}
-          </List>
+          </Grid>
         </Paper>
       )}
     </Container>
