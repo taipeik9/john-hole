@@ -42,6 +42,7 @@ export default function Nav() {
                 key={page.slug}
                 onClick={() => {
                   navigate(page.slug);
+                  handleCloseDrawer();
                 }}
               >
                 <ListItem>
