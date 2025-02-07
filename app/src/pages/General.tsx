@@ -1,8 +1,8 @@
 import { Box, Container, Typography } from "@mui/material";
 import { useEffect, useState } from "react";
-import MessageRanking from "../components/graphs/MessageRanking";
-import HahasSent from "../components/graphs/HahasSent";
+import MessageRanking from "../components/custom-graphs/MessageRanking";
 import Ranking from "../components/Ranking";
+import BarGraph from "../components/BarGraph";
 
 export default function General() {
   const [rankingData, setRankingData] = useState<Record<string, number> | null>(
@@ -18,6 +18,10 @@ export default function General() {
     string,
     number
   > | null>(null);
+
+  const [ratioData, setRatioData] = useState<Record<string, number> | null>(
+    null
+  );
 
   useEffect(() => {
     fetch("src/message-data/message-ranking.json")
@@ -43,6 +47,14 @@ export default function General() {
       });
   }, []);
 
+  useEffect(() => {
+    fetch("src/message-data/ratio.json")
+      .then((res) => res.json())
+      .then((data) => {
+        setRatioData(data);
+      });
+  });
+
   return (
     <Container
       sx={{
@@ -59,6 +71,10 @@ export default function General() {
           graphs / rankings, you probably didn't engage enough in the hole,
           better luck next month!
         </Typography>
+        <Typography sx={{ m: 1 }}>
+          <b>Note:</b> If you're on mobile, and you turn your phone sideways to
+          view the graph better, you'll have to refresh for it to resize.
+        </Typography>
       </Box>
       {messageRankingData && <MessageRanking data={messageRankingData} />}
 
@@ -70,7 +86,34 @@ export default function General() {
           medals
         />
       )}
-      {hahasSentData && <HahasSent data={hahasSentData} />}
+
+      {ratioData && (
+        <BarGraph
+          data={ratioData}
+          color="#5cfaa3"
+          title="Messages-to-Reactions Received Ratio"
+          roundText
+        />
+      )}
+      <Typography sx={{ m: 1 }}>
+        This graph represents holers' reaction ratios. Basically, your reaction
+        ratio is how many reactions you received vs the amount of messages that
+        you sent. For example, if my reaction ratio is 0.5 then that means: for
+        every text that I sent, I received 0.5 reactions back, on average. In
+        other words, I received half as many reactions back for texts that I
+        sent out.
+      </Typography>
+      {ratioData && (
+        <Ranking
+          rankingData={ratioData}
+          text="Top 5 Most Popular Holers"
+          unit="reaction ratio"
+          round
+        />
+      )}
+      {hahasSentData && (
+        <BarGraph data={hahasSentData} color="#ff94f7" title="Hahas Sent" />
+      )}
       {hahasSentData && (
         <Ranking
           rankingData={hahasSentData}
