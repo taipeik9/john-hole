@@ -1,16 +1,34 @@
-import { Box, Container, Typography } from "@mui/material";
+import {
+  Box,
+  Container,
+  Grid2 as Grid,
+  ListItemText,
+  Paper,
+  Typography,
+} from "@mui/material";
 import { useEffect, useState } from "react";
 import MessageRanking from "../components/custom-graphs/MessageRanking";
 import Ranking from "../components/Ranking";
 import BarGraph from "../components/BarGraph";
+import { Label } from "../assets/constants";
+import ReactedText from "../components/ReactedText";
+
+const labels = [
+  { label: "texts", displayName: "# of Texts Sent" },
+  { label: "image", displayName: "# of Images Sent" },
+  { label: "reactions_count", displayName: "# of Reactions" },
+  { label: "word_count", displayName: "Total Word Count" },
+];
 
 export default function General() {
+  const [totalData, setTotalData] = useState<Record<string, any> | null>(null);
+
   const [rankingData, setRankingData] = useState<Record<string, number> | null>(
     null
   );
 
   const [messageRankingData, setMessageRankingData] = useState<Record<
-    "texts" | "image",
+    "texts" | "image" | "video",
     Record<string, number>
   > | null>(null);
 
@@ -22,6 +40,14 @@ export default function General() {
   const [ratioData, setRatioData] = useState<Record<string, number> | null>(
     null
   );
+
+  useEffect(() => {
+    fetch("src/message-data/totals.json")
+      .then((res) => res.json())
+      .then((data) => {
+        setTotalData(data);
+      });
+  }, []);
 
   useEffect(() => {
     fetch("src/message-data/message-ranking.json")
@@ -72,10 +98,32 @@ export default function General() {
           better luck next month!
         </Typography>
         <Typography sx={{ m: 1 }}>
-          <b>Note:</b> If you're on mobile, and you turn your phone sideways to
-          view the graph better, you'll have to refresh for it to resize.
+          <b>Note:</b> The graphs look much better on desktop rather than
+          mobile. If you're on mobile, and you turn your phone sideways to view
+          the graph better, you'll have to refresh for it to resize.
         </Typography>
       </Box>
+
+      {totalData && (
+        <Box maxWidth={600}>
+          <Typography variant="h6">Total Hole Stats</Typography>
+          <Paper elevation={2} sx={{ m: 2 }}>
+            <Grid container spacing={2}>
+              {labels.map((label: Label) => (
+                <Grid size={6}>
+                  <ListItemText
+                    sx={{ m: 2 }}
+                    primary={totalData[label.label]}
+                    secondary={label.displayName}
+                  />
+                </Grid>
+              ))}
+            </Grid>
+            <ReactedText messages={totalData.most_reacted_text} sender />
+          </Paper>
+        </Box>
+      )}
+
       {messageRankingData && <MessageRanking data={messageRankingData} />}
 
       {rankingData && (
