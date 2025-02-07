@@ -3,7 +3,7 @@ import Plot from "react-plotly.js";
 export default function MessageRanking({
   data,
 }: {
-  data: Record<"texts" | "image", Record<string, number>>;
+  data: Record<"texts" | "image" | "video", Record<string, number>>;
 }) {
   return (
     <Plot
@@ -21,6 +21,13 @@ export default function MessageRanking({
           x: Object.keys(data.image),
           y: Object.values(data.image).map((val) => Number(val)),
           marker: { color: "#ffbe54" },
+        },
+        {
+          type: "bar",
+          name: "Videos",
+          x: Object.keys(data.video),
+          y: Object.values(data.video).map((val) => Number(val)),
+          marker: { color: "#5cfaa3" },
         },
       ]}
       layout={{

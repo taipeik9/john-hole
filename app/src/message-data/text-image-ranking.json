@@ -1,7 +1,7 @@
 {
   "texts": {
-    "Ryan": 1477,
     "Austin": 1605,
+    "Ryan": 1477,
     "Krystiana": 1546,
     "Ben": 1246,
     "Igor": 1178,
@@ -22,11 +22,12 @@
     "josh.maycock@yahoo.com": 36,
     "Rayhan": 26,
     "+16475394413": 22,
-    "Nicole": 15
+    "Nicole": 15,
+    "+16135581208": 5
   },
   "image": {
-    "Ryan": 271,
     "Austin": 140,
+    "Ryan": 271,
     "Krystiana": 125,
     "Ben": 62,
     "Igor": 104,
@@ -47,6 +48,33 @@
     "josh.maycock@yahoo.com": 5,
     "Rayhan": 1,
     "+16475394413": 1,
-    "Nicole": 3
+    "Nicole": 3,
+    "+16135581208": 0
+  },
+  "video": {
+    "Austin": 18,
+    "Ryan": 8,
+    "Krystiana": 2,
+    "Ben": 18,
+    "Igor": 8,
+    "Riley": 8,
+    "John": 16,
+    "Nick": 3,
+    "Jack": 8,
+    "+14167995612": 7,
+    "hashtagyoloswagbeef@gmail.com": 0,
+    "Eden": 6,
+    "Henry": 4,
+    "melaniesmyth13@gmail.com": 0,
+    "Greg": 1,
+    "Darcy": 1,
+    "+12899330628": 0,
+    "Ernesto": 1,
+    "Ali": 2,
+    "josh.maycock@yahoo.com": 0,
+    "Rayhan": 0,
+    "+16475394413": 0,
+    "Nicole": 0,
+    "+16135581208": 1
   }
 }

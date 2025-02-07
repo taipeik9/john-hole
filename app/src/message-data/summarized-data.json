@@ -1,30 +1,13 @@
 {
-  "Ryan": {
-    "texts": 1477,
-    "image": 271,
-    "reactions_received": 1059,
-    "messages": 1748,
-    "reactions_sent": 594,
-    "hahas_sent": 478,
-    "ratio": 0.6058352403,
-    "word_count": 10688,
-    "most_reacted_text": [
-      {
-        "texts": "\ufffc",
-        "image": "attachments\/302\/50788.jpeg",
-        "video": null,
-        "reactions_received": 10
-      }
-    ]
-  },
   "Austin": {
     "texts": 1605,
     "image": 140,
+    "video": 18,
     "reactions_received": 550,
-    "messages": 1745,
+    "messages": 1763,
     "reactions_sent": 662,
     "hahas_sent": 364,
-    "ratio": 0.3151862464,
+    "ratio": 0.311968236,
     "word_count": 8524,
     "most_reacted_text": [
       {
@@ -35,14 +18,34 @@
       }
     ]
   },
+  "Ryan": {
+    "texts": 1477,
+    "image": 271,
+    "video": 8,
+    "reactions_received": 1059,
+    "messages": 1756,
+    "reactions_sent": 594,
+    "hahas_sent": 478,
+    "ratio": 0.6030751708,
+    "word_count": 10688,
+    "most_reacted_text": [
+      {
+        "texts": "\ufffc",
+        "image": "attachments\/302\/50788.jpeg",
+        "video": null,
+        "reactions_received": 10
+      }
+    ]
+  },
   "Krystiana": {
     "texts": 1546,
     "image": 125,
+    "video": 2,
     "reactions_received": 326,
-    "messages": 1671,
+    "messages": 1673,
     "reactions_sent": 277,
     "hahas_sent": 203,
-    "ratio": 0.1950927588,
+    "ratio": 0.1948595338,
     "word_count": 9084,
     "most_reacted_text": [
       {
@@ -56,11 +59,12 @@
   "Ben": {
     "texts": 1246,
     "image": 62,
+    "video": 18,
     "reactions_received": 595,
-    "messages": 1308,
+    "messages": 1326,
     "reactions_sent": 659,
     "hahas_sent": 536,
-    "ratio": 0.4548929664,
+    "ratio": 0.4487179487,
     "word_count": 8646,
     "most_reacted_text": [
       {
@@ -74,11 +78,12 @@
   "Igor": {
     "texts": 1178,
     "image": 104,
+    "video": 8,
     "reactions_received": 629,
-    "messages": 1282,
+    "messages": 1290,
     "reactions_sent": 380,
     "hahas_sent": 293,
-    "ratio": 0.4906396256,
+    "ratio": 0.4875968992,
     "word_count": 9470,
     "most_reacted_text": [
       {
@@ -92,11 +97,12 @@
   "Riley": {
     "texts": 1038,
     "image": 143,
+    "video": 8,
     "reactions_received": 452,
-    "messages": 1181,
+    "messages": 1189,
     "reactions_sent": 773,
     "hahas_sent": 662,
-    "ratio": 0.382726503,
+    "ratio": 0.3801513877,
     "word_count": 6146,
     "most_reacted_text": [
       {
@@ -110,11 +116,12 @@
   "John": {
     "texts": 652,
     "image": 384,
+    "video": 16,
     "reactions_received": 670,
-    "messages": 1036,
+    "messages": 1052,
     "reactions_sent": 182,
     "hahas_sent": 136,
-    "ratio": 0.6467181467,
+    "ratio": 0.6368821293,
     "word_count": 5282,
     "most_reacted_text": [
       {
@@ -134,11 +141,12 @@
   "Nick": {
     "texts": 840,
     "image": 98,
+    "video": 3,
     "reactions_received": 410,
-    "messages": 938,
+    "messages": 941,
     "reactions_sent": 756,
     "hahas_sent": 610,
-    "ratio": 0.4371002132,
+    "ratio": 0.435706695,
     "word_count": 6429,
     "most_reacted_text": [
       {
@@ -152,11 +160,12 @@
   "Jack": {
     "texts": 642,
     "image": 92,
+    "video": 8,
     "reactions_received": 431,
-    "messages": 734,
+    "messages": 742,
     "reactions_sent": 746,
     "hahas_sent": 663,
-    "ratio": 0.5871934605,
+    "ratio": 0.5808625337,
     "word_count": 6388,
     "most_reacted_text": [
       {
@@ -170,11 +179,12 @@
   "+14167995612": {
     "texts": 505,
     "image": 64,
+    "video": 7,
     "reactions_received": 182,
-    "messages": 569,
+    "messages": 576,
     "reactions_sent": 361,
     "hahas_sent": 192,
-    "ratio": 0.3198594025,
+    "ratio": 0.3159722222,
     "word_count": 4072,
     "most_reacted_text": [
       {
@@ -194,6 +204,7 @@
   "hashtagyoloswagbeef@gmail.com": {
     "texts": 253,
     "image": 16,
+    "video": 0,
     "reactions_received": 151,
     "messages": 269,
     "reactions_sent": 7,
@@ -212,11 +223,12 @@
   "Eden": {
     "texts": 180,
     "image": 15,
+    "video": 6,
     "reactions_received": 93,
-    "messages": 195,
+    "messages": 201,
     "reactions_sent": 61,
     "hahas_sent": 30,
-    "ratio": 0.4769230769,
+    "ratio": 0.4626865672,
     "word_count": 1154,
     "most_reacted_text": [
       {
@@ -230,11 +242,12 @@
   "Henry": {
     "texts": 147,
     "image": 28,
+    "video": 4,
     "reactions_received": 119,
-    "messages": 175,
+    "messages": 179,
     "reactions_sent": 318,
     "hahas_sent": 246,
-    "ratio": 0.68,
+    "ratio": 0.6648044693,
     "word_count": 1130,
     "most_reacted_text": [
       {
@@ -248,6 +261,7 @@
   "melaniesmyth13@gmail.com": {
     "texts": 123,
     "image": 10,
+    "video": 0,
     "reactions_received": 82,
     "messages": 133,
     "reactions_sent": 48,
@@ -266,11 +280,12 @@
   "Greg": {
     "texts": 102,
     "image": 25,
+    "video": 1,
     "reactions_received": 113,
-    "messages": 127,
+    "messages": 128,
     "reactions_sent": 41,
     "hahas_sent": 17,
-    "ratio": 0.8897637795,
+    "ratio": 0.8828125,
     "word_count": 872,
     "most_reacted_text": [
       {
@@ -290,11 +305,12 @@
   "Darcy": {
     "texts": 81,
     "image": 8,
+    "video": 1,
     "reactions_received": 55,
-    "messages": 89,
+    "messages": 90,
     "reactions_sent": 33,
     "hahas_sent": 29,
-    "ratio": 0.6179775281,
+    "ratio": 0.6111111111,
     "word_count": 575,
     "most_reacted_text": [
       {
@@ -338,6 +354,7 @@
   "+12899330628": {
     "texts": 55,
     "image": 2,
+    "video": 0,
     "reactions_received": 17,
     "messages": 57,
     "reactions_sent": 19,
@@ -362,11 +379,12 @@
   "Ernesto": {
     "texts": 42,
     "image": 13,
+    "video": 1,
     "reactions_received": 14,
-    "messages": 55,
+    "messages": 56,
     "reactions_sent": 3,
     "hahas_sent": 1,
-    "ratio": 0.2545454545,
+    "ratio": 0.25,
     "word_count": 217,
     "most_reacted_text": [
       {
@@ -392,11 +410,12 @@
   "Ali": {
     "texts": 34,
     "image": 10,
+    "video": 2,
     "reactions_received": 70,
-    "messages": 44,
+    "messages": 46,
     "reactions_sent": 61,
     "hahas_sent": 38,
-    "ratio": 1.5909090909,
+    "ratio": 1.5217391304,
     "word_count": 255,
     "most_reacted_text": [
       {
@@ -416,6 +435,7 @@
   "josh.maycock@yahoo.com": {
     "texts": 36,
     "image": 5,
+    "video": 0,
     "reactions_received": 19,
     "messages": 41,
     "reactions_sent": 0,
@@ -446,6 +466,7 @@
   "Rayhan": {
     "texts": 26,
     "image": 1,
+    "video": 0,
     "reactions_received": 15,
     "messages": 27,
     "reactions_sent": 16,
@@ -464,6 +485,7 @@
   "+16475394413": {
     "texts": 22,
     "image": 1,
+    "video": 0,
     "reactions_received": 2,
     "messages": 23,
     "reactions_sent": 2,
@@ -475,6 +497,7 @@
   "Nicole": {
     "texts": 15,
     "image": 3,
+    "video": 0,
     "reactions_received": 2,
     "messages": 18,
     "reactions_sent": 41,
@@ -490,32 +513,15 @@
       }
     ]
   },
-  "+18103048098": {
-    "texts": 2,
-    "image": 3,
-    "reactions_received": 2,
-    "messages": 5,
-    "reactions_sent": 1,
-    "hahas_sent": 1,
-    "ratio": 0.4,
-    "word_count": 17,
-    "most_reacted_text": [
-      {
-        "texts": "To me, Crazy Frog is just normal frog",
-        "image": null,
-        "video": null,
-        "reactions_received": 2
-      }
-    ]
-  },
   "+16135581208": {
     "texts": 5,
     "image": 0,
+    "video": 1,
     "reactions_received": 6,
-    "messages": 5,
+    "messages": 6,
     "reactions_sent": 9,
     "hahas_sent": 7,
-    "ratio": 1.2,
+    "ratio": 1.0,
     "word_count": 39,
     "most_reacted_text": [
       {
@@ -538,20 +544,29 @@
       }
     ]
   },
-  "Ryan 2": {
-    "texts": 4,
-    "image": 0,
-    "reactions_received": 0,
-    "messages": 4,
-    "reactions_sent": 2,
-    "hahas_sent": 2,
-    "ratio": 0.0,
-    "word_count": 11,
-    "most_reacted_text": null
+  "+18103048098": {
+    "texts": 2,
+    "image": 3,
+    "video": 0,
+    "reactions_received": 2,
+    "messages": 5,
+    "reactions_sent": 1,
+    "hahas_sent": 1,
+    "ratio": 0.4,
+    "word_count": 17,
+    "most_reacted_text": [
+      {
+        "texts": "To me, Crazy Frog is just normal frog",
+        "image": null,
+        "video": null,
+        "reactions_received": 2
+      }
+    ]
   },
   "+13432045724": {
     "texts": 3,
     "image": 1,
+    "video": 0,
     "reactions_received": 4,
     "messages": 4,
     "reactions_sent": 2,
@@ -570,6 +585,7 @@
   "+16479917601": {
     "texts": 3,
     "image": 1,
+    "video": 0,
     "reactions_received": 1,
     "messages": 4,
     "reactions_sent": 0,
@@ -581,6 +597,7 @@
   "Tommy": {
     "texts": 3,
     "image": 1,
+    "video": 0,
     "reactions_received": 4,
     "messages": 4,
     "reactions_sent": 1,
@@ -596,9 +613,22 @@
       }
     ]
   },
+  "Ryan 2": {
+    "texts": 4,
+    "image": 0,
+    "video": 0,
+    "reactions_received": 0,
+    "messages": 4,
+    "reactions_sent": 2,
+    "hahas_sent": 2,
+    "ratio": 0.0,
+    "word_count": 11,
+    "most_reacted_text": null
+  },
   "Mel": {
     "texts": 2,
     "image": 0,
+    "video": 0,
     "reactions_received": 0,
     "messages": 2,
     "reactions_sent": 1,
@@ -610,6 +640,7 @@
   "+16138594804": {
     "texts": 2,
     "image": 0,
+    "video": 0,
     "reactions_received": 0,
     "messages": 2,
     "reactions_sent": 0,
@@ -621,6 +652,7 @@
   "stephazel108@gmail.com": {
     "texts": 1,
     "image": 0,
+    "video": 0,
     "reactions_received": 1,
     "messages": 1,
     "reactions_sent": 8,
@@ -632,6 +664,7 @@
   "Michaela": {
     "texts": 1,
     "image": 0,
+    "video": 0,
     "reactions_received": 0,
     "messages": 1,
     "reactions_sent": 9,
@@ -643,6 +676,7 @@
   "M****": {
     "texts": 1,
     "image": 0,
+    "video": 0,
     "reactions_received": 1,
     "messages": 1,
     "reactions_sent": 1,
@@ -654,6 +688,7 @@
   "+16139797154": {
     "texts": 0,
     "image": 1,
+    "video": 0,
     "reactions_received": 0,
     "messages": 1,
     "reactions_sent": 0,
@@ -665,6 +700,7 @@
   "+16138093940": {
     "texts": 0,
     "image": 0,
+    "video": 0,
     "reactions_received": 0,
     "messages": 0,
     "reactions_sent": 0,
@@ -676,6 +712,7 @@
   "+16477019241": {
     "texts": 0,
     "image": 0,
+    "video": 0,
     "reactions_received": 0,
     "messages": 0,
     "reactions_sent": 0,
@@ -687,6 +724,7 @@
   "+15197192478": {
     "texts": 0,
     "image": 0,
+    "video": 0,
     "reactions_received": 0,
     "messages": 0,
     "reactions_sent": 0,

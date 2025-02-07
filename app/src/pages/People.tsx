@@ -8,11 +8,7 @@ import {
   Grid2 as Grid,
   Typography,
 } from "@mui/material";
-
-type Label = {
-  label: string;
-  displayName: string;
-};
+import { Label } from "../assets/constants";
 
 const labels = [
   { label: "texts", displayName: "# of Texts Sent" },
