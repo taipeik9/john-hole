@@ -54,7 +54,7 @@ export default function Nav() {
         </List>
       </Drawer>
       <IconButton
-        sx={{ position: "absolute", top: "10px", left: "10px" }}
+        sx={{ position: "fixed", top: "10px", left: "10px", zIndex: 99 }}
         onClick={handleOpenDrawer}
       >
         <MenuIcon />

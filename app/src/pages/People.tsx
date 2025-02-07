@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import {
   Container,
   ListItemText,
@@ -29,6 +29,8 @@ export default function People() {
   const [data, setData] = useState<any>();
   const [selectedPerson, setSelectedPerson] = useState<any>(null);
 
+  const inputRef = useRef<HTMLInputElement | null>(null);
+
   useEffect(() => {
     fetch("src/message-data/summarized-data.json")
       .then((res) => res.json())
@@ -39,6 +41,7 @@ export default function People() {
 
   return (
     <Container maxWidth="sm" sx={{ p: 2 }}>
+      <Typography variant="h5">People</Typography>
       <Typography sx={{ m: 1 }}>
         Search for your name, and if your name isn't in the list then search
         your number / iCloud email address. You will be able to see an overview
@@ -60,9 +63,16 @@ export default function People() {
           fullWidth
           onChange={(e: any, newVal: any | null) => {
             setSelectedPerson(data[newVal]);
+            if (inputRef.current) {
+              inputRef.current.blur();
+            }
           }}
           renderInput={(params) => (
-            <TextField {...params} label="Select a person" />
+            <TextField
+              {...params}
+              label="Select a person"
+              inputRef={inputRef}
+            />
           )}
         />
       )}
