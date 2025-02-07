@@ -6,6 +6,7 @@ import {
   Autocomplete,
   TextField,
   Grid2 as Grid,
+  Typography,
 } from "@mui/material";
 
 type Label = {
@@ -38,6 +39,12 @@ export default function People() {
 
   return (
     <Container maxWidth="sm" sx={{ p: 2 }}>
+      <Typography sx={{ m: 1 }}>
+        Search for your name, and if your name isn't in the list then search
+        your number / iCloud email address. You will be able to see an overview
+        of the selected person's statistics!
+      </Typography>
+
       {data && (
         <Autocomplete
           disablePortal
