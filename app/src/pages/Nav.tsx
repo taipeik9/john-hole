@@ -39,11 +39,12 @@ export default function Nav() {
           {pages.map((page: Page) => {
             return (
               <ListItemButton
+                key={page.slug}
                 onClick={() => {
                   navigate(page.slug);
                 }}
               >
-                <ListItem key={page.slug}>
+                <ListItem>
                   <ListItemText primary={page.name} />
                 </ListItem>
               </ListItemButton>
