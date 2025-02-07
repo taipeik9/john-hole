@@ -1,4 +1,5 @@
-import type { ReactNode } from "react";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import {
   Box,
   Container,
@@ -13,17 +14,17 @@ import MenuOpenIcon from "@mui/icons-material/MenuOpen";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Page, pages } from "../assets/constants";
 
-export default function Layout({
-  openDrawer,
-  handleOpenDrawer,
-  handleCloseDrawer,
-  children,
-}: {
-  openDrawer: boolean;
-  handleOpenDrawer: () => void;
-  handleCloseDrawer: () => void;
-  children: ReactNode;
-}) {
+export default function Nav() {
+  const [openDrawer, setOpenDrawer] = useState<boolean>(false);
+  const handleOpenDrawer = () => {
+    setOpenDrawer(true);
+  };
+  const handleCloseDrawer = () => {
+    setOpenDrawer(false);
+  };
+
+  const navigate = useNavigate();
+
   return (
     <Container>
       <Drawer open={openDrawer} onClose={handleCloseDrawer}>
@@ -37,7 +38,11 @@ export default function Layout({
           </ListItem>
           {pages.map((page: Page) => {
             return (
-              <ListItemButton>
+              <ListItemButton
+                onClick={() => {
+                  navigate(page.slug);
+                }}
+              >
                 <ListItem key={page.slug}>
                   <ListItemText primary={page.name} />
                 </ListItem>
@@ -46,7 +51,6 @@ export default function Layout({
           })}
         </List>
       </Drawer>
-      {children}
       <IconButton
         sx={{ position: "absolute", top: "10px", left: "10px" }}
         onClick={handleOpenDrawer}

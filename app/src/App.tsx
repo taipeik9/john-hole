@@ -1,24 +1,25 @@
-import { useState } from "react";
-import Layout from "./pages/Layout";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import People from "./pages/People";
+import Nav from "./pages/Nav";
+import { Box, Typography } from "@mui/material";
 
 function App() {
-  const [openDrawer, setOpenDrawer] = useState<boolean>(false);
-  const handleOpenDrawer = () => {
-    setOpenDrawer(true);
-  };
-  const handleCloseDrawer = () => {
-    setOpenDrawer(false);
-  };
-
   return (
-    <Layout
-      openDrawer={openDrawer}
-      handleOpenDrawer={handleOpenDrawer}
-      handleCloseDrawer={handleCloseDrawer}
-    >
-      <People />
-    </Layout>
+    <BrowserRouter>
+      <Nav />
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          m: 2,
+        }}
+      >
+        <Typography variant="h4">John Hole 🕳️</Typography>
+      </Box>
+      <Routes>
+        <Route path="/people" element={<People />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
