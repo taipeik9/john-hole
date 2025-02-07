@@ -14,7 +14,7 @@ function App() {
           m: 2,
         }}
       >
-        <Typography variant="h4">John Hole 🕳️</Typography>
+        <Typography variant="h4">John H🕳️le </Typography>
       </Box>
       <Routes>
         <Route path="/people" element={<People />} />
