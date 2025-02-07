@@ -12,11 +12,13 @@ export default function Ranking({
   text,
   unit,
   medals,
+  round,
 }: {
   rankingData: Record<string, number>;
   text: string;
   unit: string;
   medals?: boolean;
+  round?: boolean;
 }) {
   return (
     <Box sx={{ m: 2, maxWidth: 400, width: "100%" }}>
@@ -39,7 +41,13 @@ export default function Ranking({
                         : ""
                       : ""
                   }`}
-                  secondary={`${rankingData[person]} ${unit}`}
+                  secondary={`${
+                    round
+                      ? Math.round(
+                          (rankingData[person] + Number.EPSILON) * 100
+                        ) / 100
+                      : rankingData[person]
+                  } ${unit}`}
                 />
               </ListItem>
             ))}
