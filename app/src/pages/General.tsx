@@ -50,6 +50,7 @@ export default function General() {
     fetch("/john-hole/src/message-data/totals.json")
       .then((res) => res.json())
       .then((data) => {
+        console.log("/john-hole/src/message-data/totals.json");
         setTotalData(data);
       });
   }, []);
