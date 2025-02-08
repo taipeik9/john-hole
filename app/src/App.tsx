@@ -7,7 +7,7 @@ import Awards from "./pages/Awards";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/john-hole">
       <Nav />
       <Box
         sx={{
