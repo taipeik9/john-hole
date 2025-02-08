@@ -1,0 +1,5 @@
+# Mac Misc
+.DS_Store
+
+# Ignoring folder with old data in it
+data
