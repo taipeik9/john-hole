@@ -123,7 +123,7 @@ export default function General() {
           <Paper elevation={2} sx={{ m: 2 }}>
             <Grid container spacing={2}>
               {labels.map((label: Label) => (
-                <Grid size={6}>
+                <Grid size={6} key={label.label}>
                   <ListItemText
                     sx={{ m: 2 }}
                     primary={totalData[label.label]}

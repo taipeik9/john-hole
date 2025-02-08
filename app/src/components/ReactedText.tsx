@@ -32,6 +32,7 @@ export default function ReactedText({
                 alignItems: "center",
                 m: 1,
               }}
+              key={msg.sender}
             >
               {msg.texts && (
                 <Typography>
