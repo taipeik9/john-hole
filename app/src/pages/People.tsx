@@ -9,6 +9,7 @@ import {
   Typography,
 } from "@mui/material";
 import { Label } from "../assets/constants";
+import ReactedText from "../components/ReactedText";
 
 const labels = [
   { label: "texts", displayName: "# of Texts Sent" },
@@ -92,6 +93,7 @@ export default function People() {
               </Grid>
             ))}
           </Grid>
+          <ReactedText messages={selectedPerson.most_reacted_text} />
         </Paper>
       )}
     </Container>
