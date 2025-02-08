@@ -105,10 +105,10 @@ export default function General() {
       <Box sx={{ width: "100%" }}>
         <Typography variant="h5">General</Typography>
         <Typography sx={{ m: 1 }}>
-          Here you will find all of the summarized John Hole data for the month!
-          This is represented through rankings and graphs. If you aren't on the
-          graphs / rankings, you probably didn't engage enough in the hole,
-          better luck next month!
+          Here you will find all of the summarized John Hole data for the month
+          of January! This is represented through rankings and graphs. If you
+          aren't on the graphs / rankings, you probably didn't engage enough in
+          the hole, better luck next month!
         </Typography>
         <Typography sx={{ m: 1 }}>
           <b>Note:</b> The graphs look much better on desktop rather than
