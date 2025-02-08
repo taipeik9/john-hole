@@ -1,16 +1,1 @@
-{
-  "texts": 11872,
-  "image": 1627,
-  "video": 112,
-  "word_count": 82551,
-  "reactions_count": 6074,
-  "most_reacted_text": [
-    {
-      "texts": "\ufffc",
-      "image": "attachments/302/50788.jpeg",
-      "video": null,
-      "reactions_received": 10,
-      "sender": "Ryan"
-    }
-  ]
-}
+{"texts": 11851, "image": 1626, "video": 112, "word_count": 77715, "reactions_count": 6063, "most_reacted_text": [{"texts": "\ufffc", "image": "attachments/302/50788.jpeg", "video": null, "reactions_received": 10, "sender": "Ryan"}]}

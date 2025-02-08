@@ -41,6 +41,11 @@ export default function General() {
     null
   );
 
+  const [wordCountData, setWordCountData] = useState<Record<
+    string,
+    number
+  > | null>(null);
+
   useEffect(() => {
     fetch("src/message-data/totals.json")
       .then((res) => res.json())
@@ -78,6 +83,14 @@ export default function General() {
       .then((res) => res.json())
       .then((data) => {
         setRatioData(data);
+      });
+  });
+
+  useEffect(() => {
+    fetch("src/message-data/word-count.json")
+      .then((res) => res.json())
+      .then((data) => {
+        setWordCountData(data);
       });
   });
 
@@ -167,6 +180,17 @@ export default function General() {
           rankingData={hahasSentData}
           text="Top 5 Gigglers"
           unit="laughs"
+        />
+      )}
+
+      {wordCountData && (
+        <BarGraph data={wordCountData} color="#ffd359" title="Word Count" />
+      )}
+      {wordCountData && (
+        <Ranking
+          rankingData={wordCountData}
+          text="Top 5 Authors"
+          unit="words"
         />
       )}
     </Container>
