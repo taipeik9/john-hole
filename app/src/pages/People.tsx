@@ -58,7 +58,7 @@ export default function People() {
             return isANumber ? a.localeCompare(b) : a.localeCompare(b);
           })}
           fullWidth
-          onChange={(e: any, newVal: any | null) => {
+          onChange={(_: any, newVal: any | null) => {
             setSelectedPerson(data[newVal]);
             if (inputRef.current) {
               inputRef.current.blur();
