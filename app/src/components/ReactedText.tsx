@@ -39,12 +39,12 @@ export default function ReactedText({
                 </Typography>
               )}
               {msg.image && (
-                <img style={{ width: "70%" }} src={`src/${msg.image}`} />
+                <img style={{ width: "70%" }} src={`./${msg.image}`} />
               )}
               {msg.video && (
                 <video
                   style={{ width: "70%" }}
-                  src={`src/${msg.video}`}
+                  src={`./${msg.video}`}
                   controls
                 />
               )}
