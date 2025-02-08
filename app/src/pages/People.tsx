@@ -29,7 +29,7 @@ export default function People() {
   const inputRef = useRef<HTMLInputElement | null>(null);
 
   useEffect(() => {
-    fetch(`${process.env.PUBLIC_URL}/src/message-data/summarized-data.json`)
+    fetch("/john-hole/src/message-data/summarized-data.json")
       .then((res) => res.json())
       .then((data) => {
         setData(data);
