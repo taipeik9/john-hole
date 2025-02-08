@@ -12,31 +12,46 @@ export default function ReactedText({
   messages,
   sender,
 }: {
-  messages: Message[];
+  messages: Message[] | null;
   sender?: boolean;
 }) {
   return (
-    <Box>
-      {messages.map((msg: Message) => (
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            p: 2,
-          }}
-        >
+    <Box sx={{ p: 2 }}>
+      {messages && (
+        <>
           <Typography variant="body1">
-            Most Reacted to Message of the Month
+            <b>Most Reacted to Message(s) of the Month</b>
           </Typography>
-          {sender && <Typography>Sender: {msg.sender}</Typography>}
-          <Typography>Reactions: {msg.reactions_received}</Typography>
-          {msg.texts && <Typography>{msg.texts}</Typography>}
-          {msg.image && (
-            <img style={{ width: "70%" }} src={`src/${msg.image}`} />
-          )}
-        </Box>
-      ))}
+          {sender && <Typography>Sender: {messages[0].sender}</Typography>}
+          <Typography>Reactions: {messages[0].reactions_received}</Typography>
+          {messages.map((msg: Message) => (
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                m: 1,
+              }}
+            >
+              {msg.texts && (
+                <Typography>
+                  <i>{msg.texts}</i>
+                </Typography>
+              )}
+              {msg.image && (
+                <img style={{ width: "70%" }} src={`src/${msg.image}`} />
+              )}
+              {msg.video && (
+                <video
+                  style={{ width: "70%" }}
+                  src={`src/${msg.video}`}
+                  controls
+                />
+              )}
+            </Box>
+          ))}
+        </>
+      )}
     </Box>
   );
 }
