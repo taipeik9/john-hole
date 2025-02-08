@@ -47,16 +47,15 @@ export default function General() {
   > | null>(null);
 
   useEffect(() => {
-    fetch("/john-hole/src/message-data/totals.json")
+    fetch("./message-data/totals.json")
       .then((res) => res.json())
       .then((data) => {
-        console.log("/john-hole/src/message-data/totals.json");
         setTotalData(data);
       });
   }, []);
 
   useEffect(() => {
-    fetch("/john-hole/src/message-data/message-ranking.json")
+    fetch("./message-data/message-ranking.json")
       .then((res) => res.json())
       .then((data) => {
         setRankingData(data);
@@ -64,7 +63,7 @@ export default function General() {
   }, []);
 
   useEffect(() => {
-    fetch("/john-hole/src/message-data/text-image-ranking.json")
+    fetch("./message-data/text-image-ranking.json")
       .then((res) => res.json())
       .then((data) => {
         setMessageRankingData(data);
@@ -72,7 +71,7 @@ export default function General() {
   }, []);
 
   useEffect(() => {
-    fetch("/john-hole/src/message-data/hahas-sent.json")
+    fetch("./message-data/hahas-sent.json")
       .then((res) => res.json())
       .then((data) => {
         setHahasSentData(data);
@@ -80,7 +79,7 @@ export default function General() {
   }, []);
 
   useEffect(() => {
-    fetch("/john-hole/src/message-data/ratio.json")
+    fetch("./message-data/ratio.json")
       .then((res) => res.json())
       .then((data) => {
         setRatioData(data);
@@ -88,7 +87,7 @@ export default function General() {
   });
 
   useEffect(() => {
-    fetch("/john-hole/src/message-data/word-count.json")
+    fetch("./message-data/word-count.json")
       .then((res) => res.json())
       .then((data) => {
         setWordCountData(data);
