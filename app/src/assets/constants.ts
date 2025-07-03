@@ -6,7 +6,7 @@ export type Page = {
 export const pages = [
   { name: "General", slug: "/general" },
   { name: "People", slug: "/people" },
-  { name: "Awards", slug: "/awards" },
+  // { name: "Awards", slug: "/awards" },
 ];
 
 export type Label = {
